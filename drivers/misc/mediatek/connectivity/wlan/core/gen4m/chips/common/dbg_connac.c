@@ -1292,8 +1292,6 @@ void halDumpTxdInfo(IN struct ADAPTER *prAdapter, uint8_t *tmac_info)
 	if (txd_s->TxD1.ft == TMI_FT_LONG) {
 		struct TMAC_TXD_L *txd_l = (struct TMAC_TXD_L *)tmac_info;
 		struct TMAC_TXD_2 *txd_2 = &txd_l->TxD2;
-		struct TMAC_TXD_3 *txd_3 = &txd_l->TxD3;
-		struct TMAC_TXD_4 *txd_4 = &txd_l->TxD4;
 		struct TMAC_TXD_5 *txd_5 = &txd_l->TxD5;
 		struct TMAC_TXD_6 *txd_6 = &txd_l->TxD6;
 
